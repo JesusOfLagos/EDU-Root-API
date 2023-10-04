@@ -56,8 +56,6 @@ async function connectToDB() {
   }
   
 
-// Call the connectToDB function
-connectToDB();
 
 
 // Port
@@ -80,3 +78,5 @@ io.on('connection', (socket: Socket) => {
     console.log(`Server Is Running on Port ${port}`);
   });
 
+// Call the connectToDB function
+connectToDB();
